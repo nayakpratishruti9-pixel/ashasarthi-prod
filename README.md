@@ -1,4 +1,4 @@
-# AshaSarthi
+# AshaSarthi: Ek Sarthi Sabka Sathi
 
 AshaSarthi is a multilingual health and community-care management portal for ASHA workers and Anganwadi workers (AWCS) in Odisha. It provides authenticated access to supply inventory, distribution records, health-related workflows, help content, and an AI support assistant.
 
@@ -87,20 +87,7 @@ Generate a strong `NEXTAUTH_SECRET` rather than using the example value. For exa
 openssl rand -base64 32
 ```
 
-### 3. Prepare the database
-
-The application uses PostgreSQL through Sequelize models in [`backend/database/models/`](./backend/database/models/). The current code expects the database schema to already exist; it does not include a migration or seed command.
-
-The main models are:
-
-- `users` — account, contact, role, and password data
-- `supplies` — inventory items, units, quantities, and low-stock thresholds
-- `distributions` — supply distribution records
-- `awcs` — Anganwadi center data
-
-Create or migrate these tables using your PostgreSQL workflow before testing sign-up, sign-in, supplies, or distributions.
-
-### 4. Start the development server
+### 3. Start the development server
 
 ```bash
 npm run dev
@@ -108,7 +95,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000). PWA service-worker generation is disabled in development to avoid stale-cache issues.
 
-### 5. Create an account
+### 4. Create an account
 
 Open `/signup` and register with:
 
@@ -273,4 +260,4 @@ Unregister the service worker in DevTools under **Application > Service Workers*
 
 ## License
 
-No license file is currently included in the repository. Confirm the intended license with the project maintainers before distributing the application.
+This project is licensed under the [MIT License](./LICENSE).
